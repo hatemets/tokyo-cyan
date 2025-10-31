@@ -60,6 +60,11 @@ local colors = {
   git_change = "#6183bb",   -- Changed (tokyo git change)
   git_delete = "#914c54",   -- Deleted (tokyo git delete)
 
+   -- Diff backgrounds (subtle, only for changed line highlighting)
+   diff_add_bg = "#1a3d2a",  -- Added line background (subtle green)
+   diff_change_bg = "#1e2a3a", -- Changed line background (subtle blue-gray)
+   diff_delete_bg = "#3d1a2a", -- Deleted line background (subtle red)
+
    -- UI Colors
    cursor_line = "#141820",  -- Cursor line background (darkened)
    selection = "#2d5a6b",    -- Selection background (cyan-tinted, less blue)
@@ -183,10 +188,19 @@ set_hl("PmenuThumb", { bg = colors.cyan })  -- Bright cyan scrollbar thumb
 -- DIFF & VERSION CONTROL
 -- ============================================================================
 
-set_hl("DiffAdd", { bg = colors.git_add })
-set_hl("DiffDelete", { bg = colors.git_delete })
-set_hl("DiffChange", { bg = colors.git_change })
-set_hl("DiffText", { bg = colors.cyan, bold = true })
+set_hl("DiffAdd", { bg = colors.diff_add_bg })
+set_hl("DiffDelete", { bg = colors.diff_delete_bg })
+set_hl("DiffChange", { bg = colors.diff_change_bg })
+set_hl("DiffText", { bg = colors.diff_add_bg, bold = true })
+
+
+-- DiffView overrides (prevent text color overrides, only backgrounds)
+set_hl("DiffviewDiffAddAsChar", {})
+set_hl("DiffviewDiffAdd", { bg = colors.diff_add_bg })
+set_hl("DiffviewDiffChangeAsChar", {})
+set_hl("DiffviewDiffChange", { bg = colors.diff_change_bg })
+set_hl("DiffviewDiffDeleteAsChar", {})
+set_hl("DiffviewDiffDelete", { bg = colors.diff_delete_bg })
 
 -- Spelling
 set_hl("SpellBad", { undercurl = true, sp = colors.red })
