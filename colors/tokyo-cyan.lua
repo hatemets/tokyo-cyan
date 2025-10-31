@@ -44,10 +44,10 @@ local colors = {
   -- Types & Classes
   yellow = "#e0af68",       -- Types (tokyo yellow)
 
-  -- Variables & Members - CYAN ACCENT (Custom Tokyo Cyan signature)
-  cyan = "#7dcfff",         -- Primary cyan accent (tokyo cyan)
-  cyan_alt = "#2ac3de",     -- Secondary cyan (tokyo blue1)
-  cyan_muted = "#0db9d7",   -- Muted cyan (tokyo blue2)
+   -- Variables & Members - CYAN ACCENT (Custom Tokyo Cyan signature)
+   cyan = "#24ffb6",         -- Primary cyan accent (ayu tokyo bright cyan)
+   cyan_alt = "#13fab1",     -- Secondary cyan (ayu tokyo cyan hover)
+   cyan_muted = "#0db9d7",   -- Muted cyan (tokyo blue2)
 
   -- Warnings, Errors, Info
   red = "#f7768e",          -- Errors (tokyo red)
