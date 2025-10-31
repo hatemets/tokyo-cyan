@@ -16,17 +16,17 @@ vim.g.colors_name = "tokyo-cyan"
 -- Color Palette: Tokyo Night with Cyan accents
 -- Based on https://github.com/folke/tokyonight.nvim
 local colors = {
-  -- Primary Background & UI (from Tokyo Night Storm)
-  bg0 = "#313244",          -- Main background
-  bg1 = "#1f2335",          -- Secondary background (dark)
-  bg2 = "#292e42",          -- Tertiary background (highlight)
-  bg3 = "#1b1e2d",          -- Quaternary background
-  bg_d = "#16192e",         -- Darkened variant
+   -- Primary Background & UI (from Tokyo Night Storm) - Darkened
+   bg0 = "#1a1d28",          -- Main background (darkened from #313244)
+   bg1 = "#141820",          -- Secondary background (dark, darkened from #1f2335)
+   bg2 = "#1e2230",          -- Tertiary background (highlight, darkened from #292e42)
+   bg3 = "#0f1219",          -- Quaternary background (darkened from #1b1e2d)
+   bg_d = "#0a0d15",         -- Darkened variant (darkened from #16192e)
 
-  -- Foreground
-  fg = "#c0caf5",           -- Primary text
-  grey = "#565f89",         -- Secondary text (comment color)
-  light_grey = "#7aa2f7",   -- Tertiary text (blue)
+   -- Foreground
+   fg = "#c0caf5",           -- Primary text
+   grey = "#565f89",         -- Secondary text (comment color)
+   light_grey = "#a9b1d6",   -- Tertiary text (neutral, less blue)
 
   -- Semantic Colors: Tokyo Night
   -- Keywords & Control Flow
@@ -60,10 +60,10 @@ local colors = {
   git_change = "#6183bb",   -- Changed (tokyo git change)
   git_delete = "#914c54",   -- Deleted (tokyo git delete)
 
-  -- UI Colors
-  cursor_line = "#1f2335",  -- Cursor line background
-  selection = "#3a7fa3",    -- Selection background (bright cyan-tinted)
-  comment = "#565f89",      -- Comments (tokyo comment)
+   -- UI Colors
+   cursor_line = "#141820",  -- Cursor line background (darkened)
+   selection = "#2d5a6b",    -- Selection background (cyan-tinted, less blue)
+   comment = "#565f89",      -- Comments (tokyo comment)
 }
 
 -- Helper function to set highlights
