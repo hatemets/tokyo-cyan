@@ -183,10 +183,10 @@ set_hl("PmenuThumb", { bg = colors.cyan })  -- Bright cyan scrollbar thumb
 -- DIFF & VERSION CONTROL
 -- ============================================================================
 
-set_hl("DiffAdd", { fg = colors.git_add })
-set_hl("DiffDelete", { fg = colors.git_delete })
-set_hl("DiffChange", { fg = colors.git_change })
-set_hl("DiffText", { fg = colors.cyan, bold = true })
+set_hl("DiffAdd", { bg = colors.git_add })
+set_hl("DiffDelete", { bg = colors.git_delete })
+set_hl("DiffChange", { bg = colors.git_change })
+set_hl("DiffText", { bg = colors.cyan, bold = true })
 
 -- Spelling
 set_hl("SpellBad", { undercurl = true, sp = colors.red })
