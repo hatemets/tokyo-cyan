@@ -97,6 +97,9 @@ set_hl("ColorColumn", { bg = colors.bg1 })
 set_hl("Cursor", { fg = colors.bg0, bg = colors.cyan })
 set_hl("TermCursor", { fg = colors.bg0, bg = colors.cyan })
 
+-- Insert mode cursor (line)
+set_hl("CursorIM", { fg = colors.bg0, bg = colors.cyan })
+
 -- Selection and search
 set_hl("Visual", { bg = colors.selection })
 set_hl("VisualNOS", { bg = colors.selection })
